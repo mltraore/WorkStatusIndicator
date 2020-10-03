@@ -3,7 +3,7 @@ Work Status Indicator using Raspberry Pi &amp; LCD display
 <br/>
 ## WEb page
 <br/>
-<img src="/images/meeting0.png" alt="" title="" />
+<img src="/images/meeting.png" alt="" title="" />
 
 ## LCD Display
 
