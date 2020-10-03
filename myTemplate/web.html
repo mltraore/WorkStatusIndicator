@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Work Status Indicator</title>
+		<meta charset="utf-8">
+		    <!--  <link rel="stylesheet" type="text/css" href="custom.css"> -->s
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+	</head>
+	<body>	
+		<div class="mainBox">
+            <h1 class="myTitle">My Work Status Indicator</h1>
+            <!-- Displaying work status -->
+            <p id="workStatus"></p>
+			<div class="multi-button">
+        		<button onclick="__available()"; class="buton1" >Available</button>
+		 		<button onclick="__busy()"; class="buton2">Busy</button>
+		 		<button onclick="__class()"; class="buton3">In class</button>
+				<button onclick="__away()"; class="buton4">Away</button>
+			</div>
+            <br>
+			<div class="multi-button">
+				<button onclick="__meeting()"; class="button5" >In a meeting</button>
+		 		<button onclick="__laboratory()"; class="button6">In the laboratory</button>
+			</div>
+			<br>
+			<div class="multi-button">
+				<button onclick="__clear()"; class="button7" >Clear Display</button>
+			</div>
+		</div>
+
+    <script>
+    	var _available = "http://0.0.0.0:5000/api/available";
+		var _busy = "http://0.0.0.0:5000/api/busy";
+		var _class = "http://0.0.0.0:5000/api/class";
+		var _away = "http://0.0.0.0:5000/api/away";
+		var _meeting = "http://0.0.0.0:5000/api/meeting";
+		var _labo = "http://0.0.0.0:5000/api/laboratory";
+        var _clear = "http://0.0.0.0:5000/api/clear";
+
+        function __available()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _available);
+        	xmlhttp.send();
+        }
+
+        function __busy()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _busy);
+        	xmlhttp.send();
+        }
+
+        function __class()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _class);
+        	xmlhttp.send();
+        }
+
+        function __away()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _away);
+        	xmlhttp.send();
+        }
+
+        function __meeting()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _meeting);
+        	xmlhttp.send();
+        }
+
+        function __laboratory()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _labo);
+        	xmlhttp.send();
+        }
+
+        function __clear()
+        {
+        	var xmlhttp = new XMLHttpRequest();
+        	xmlhttp.open("GET", _clear);
+        	xmlhttp.send();
+        }
+    </script>
+	</body>
+
+</html>
