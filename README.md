@@ -4,8 +4,9 @@ Work Status Indicator using Raspberry Pi &amp; LCD display
 ## WEb page
 <br/>
 <img src="/images/meeting0.png" alt="" title="" />
-<br/>
+
 ## LCD Display
+
 <br/>
 <img src="/images/meeting.jpeg" alt="" title="" />
 <br/>
